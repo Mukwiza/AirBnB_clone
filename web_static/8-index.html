@@ -1,131 +1,151 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>AirBnB Clone</title>
-        <link rel="icon" href="images/icon.png">
-        <link rel="stylesheet" href="styles/4-common.css">
-        <link rel="stylesheet" href="styles/3-header.css">
-        <link rel="stylesheet" href="styles/3-footer.css">
-        <link rel="stylesheet" href="styles/6-filters.css">
-        <link rel="stylesheet" href="styles/8-places.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo"></div>
-        </header>
-        <div class="container">
-            <section class="filters">
-                <div class="locations">
-                    <h3>States</h3>
-                    <h4>California, Arizona...</h4>
-                    <ul class="popover">
-                        <li><h2>Arizona:</h2></li>
-                        <li>Phoenix</li>
-                        <li>Tucson</li>
-                        <li><h2>California:</h2></li>
-                        <li>San Francisco</li>
-                        <li>Los Altos</li>
-                    </ul>
-                </div>
-                <div class="amenities">
-                    <h3>Amenities</h3>
-                    <h4>Internet, Kitchen...</h4>
-                    <ul class="popover">
-                        <li>Internet</li>
-                        <li>TV</li>
-                        <li>Kitchen</li>
-                        <li>Iron</li>
-                    </ul>
-                </div>
-                <button>Search</button>
-            </section>
-            <section class="places">
-                <h1>Places</h1>
-                <article>
-                    <h2>My Home</h2>
-                    <div class="price_by_night">
-                        <p>$80
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            <div class="icon_guest"></div>
-                            <p>2 Guests
-                        </div>
-                        <div class="number_rooms">
-                            <div class="icon_bed"></div>
-                            <p>1 Bedroom
-                        </div>
-                        <div class="number_bathrooms">
-                            <div class="icon_bath"></div>
-                            <p>1 Bathroom
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><b>Owner</b>: John Lennon</p>
-                    </div>
-                    <div class="description">
-                        <p>This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people. It locates at the center of Shangai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
-                    </div>
-                </article>
-                <article>
-                    <h2>Tiny House</h2>
-                    <div class="price_by_night">
-                        <p>$65
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            <div class="icon_guest"></div>
-                            <p>4 Guests
-                        </div>
-                        <div class="number_rooms">
-                            <div class="icon_bed"></div>
-                            <p>2 Bedrooms
-                        </div>
-                        <div class="number_bathrooms">
-                            <div class="icon_bath"></div>
-                            <p>1 Bathroom
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><b>Owner</b>: Adrienne</p>
-                    </div>
-                    <div class="description">
-                        <p>Our place is a private, affordable stand-alone guest house centrally located just minutes to French Quarters, Downtown, the Fair Grounds(Jazz Fest) and City Park. The guest house is a quaint, 400 square ft. with a full bath, mini kitchen and living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also. We have a handmade counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.
-                    </div>
-                </article>
-                <article>
-                    <h2>A Suite</h2>
-                    <div class="price_by_night">
-                        <p>$190
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            <div class="icon_guest"></div>
-                            <p>5 Guests
-                        </div>
-                        <div class="number_rooms">
-                            <div class="icon_bed"></div>
-                            <p>3 Bedrooms
-                        </div>
-                        <div class="number_bathrooms">
-                            <div class="icon_bath"></div>
-                            <p>2 Bathrooms
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><b>Owner</b>: Laura Roudge</p>
-                    </div>
-                    <div class="description">
-                        <p>This suite is equipped with 2 kind-size beds and 1 twin bed, and is perfect for a family vacation. Located near ground transportation in the east of Paris, it's easy to go visit the city in less than 30 minutes. The cafe accross the street serves delicious vegan brunch every weekend, and is children-friendly.
-                    </div>
-                </article>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBnB Clone</title>
+    <link rel="stylesheet" href="styles/4-common.css" />
+    <link rel="stylesheet" href="styles/3-header.css" />
+    <link rel="stylesheet" href="styles/3-footer.css" />
+    <link rel="stylesheet" href="styles/6-filters.css" />
+    <link rel="stylesheet" href="styles/8-places.css" />
+  </head>
+  <body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBnB Clone</title>
+    <link rel="stylesheet" href="styles/4-common.css" />
+    <link rel="stylesheet" href="styles/3-header.css" />
+    <link rel="stylesheet" href="styles/3-footer.css" />
+    <link rel="stylesheet" href="styles/6-filters.css" />
+    <link rel="stylesheet" href="styles/8-places.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3 class="title">States</h3>
+          <h4 class="subtitle">Visit East Africa</h4>
+          <ul class="popover">
+            <li>
+              <h2>Uganda</h2>
+              <ul class="sublist">
+                <li>Kampala</li>
+                <li>Gulu</li>
+                <li>Lira</li>
+              </ul>
+              <h2>Kenya</h2>
+              <ul class="sublist">
+                <li>Nairobi</li>
+                <li>Mombasa</li>
+                <li>Naivasha</li>
+                <li>Kisumu</li>
+              </ul>
+              <h2>Tanzania</h2>
+              <ul class="sublist">
+                <li>Dodoma</li>
+                <li>Dar-es Salaam</li>
+                <li>Arusha</li>
+                <li>Mwanza</li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <footer>
-            <div class="footText">
-                <p>Holberton School</p>
+        <div class="amenities">
+          <h3 class="title">Amenities</h3>
+          <h4 class="subtitle">Visit Places</h4>
+          <ul class="popover sublist">
+            <li>Lake Victoria</li>
+            <li>Kidepo National Game Park</li>
+            <li>Mercishion Falls</li>
+            <li>Lake Albert</li>
+            <li>Amuru Hot Spring</li>
+            <li>Fort Patiko</li>
+            <li>Aruu Fall</li>
+            <li>Lewa</li>
+            <li>Mt. Kenya National Park</li>
+            <li>Manda Bay</li>
+            <li>Maasai Mara</li>
+          </ul>
+        </div>
+        <button>Search</button>
+      </section>
+      <section class="places">
+        <h1 class="heading">Places</h1>
+        <div class="article-container"></div>
+        <article>
+            <div class="article-top">
+              <h2 class="place-title">Bomah Hotel</h2>
+              <div class="price_by_night">$75</div>
             </div>
-        </footer>
-    </body>
+            <div class="information">
+              <div class="max_guest"><p>38 Guests</p></div>
+              <div class="number_rooms"><p>24 Rooms</p></div>
+              <div class="number_bathrooms"><p>16 Bathrooms</p></div>
+            </div>
+            <div class="user">
+              <p><strong>Owner: </strong>Ojok Simon Peter</p>
+            </div>
+            <div class="description">
+              <p>
+                Bomah Hotel is located in the heart of Gulu City. Bomah Hotel
+                offers classic services at affordable rates. We offer
+                accomodation, conference facilities, catering services, well
+                stocked bar.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="article-top">
+              <h2 class="place-title">Churchil Court Hotel</h2>
+              <div class="price_by_night">$80</div>
+            </div>
+            <div class="information">
+              <div class="max_guest"><p>24 Guests</p></div>
+              <div class="number_rooms"><p>16 Rooms</p></div>
+              <div class="number_bathrooms"><p>8 Bathrooms</p></div>
+            </div>
+            <div class="user">
+              <p><strong>Owner: </strong>Elisa Hezikiah Dimiti</p>
+            </div>
+            <div class="description">
+              <p>
+                Churchil Court Hotel is located in the heart of Gulu City. Churchil Court Hotel
+                offers classic services at affordable rates. We offer
+                accomodation, conference facilities, catering services, well
+                stocked bar.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="article-top">
+              <h2 class="place-title">Global Frienship Hotel</h2>
+              <div class="price_by_night">$34</div>
+            </div>
+            <div class="information">
+              <div class="max_guest"><p>18 Guests</p></div>
+              <div class="number_rooms"><p>9 Rooms</p></div>
+              <div class="number_bathrooms"><p>6 Bathrooms</p></div>
+            </div>
+            <div class="user">
+              <p><strong>Owner: </strong>Eyena Samuel Baker</p>
+            </div>
+            <div class="description">
+              <p>
+                Global Frienship Hotel is located in the heart of Gulu City. Global Frienship Hotel
+                offers classic services at affordable rates. We offer
+                accomodation, conference facilities, catering services, well
+                stocked bar.
+              </p>
+            </div>
+        </article>
+      </div>
+      </section>
+    </div>
+    <footer class="footer"><p>Best School</p></footer>
+  </body>
 </html>
